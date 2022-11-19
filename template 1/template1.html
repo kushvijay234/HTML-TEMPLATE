@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TEMPLATE 1</title>
+
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#main-banner{
+			background-color: #dadbda;
+			width: 100%;
+			height: 600px;
+		}
+		.container{
+			margin: 0px 180px;
+			height: 600px;
+		}
+		.container-content{
+			width: 100%;
+			display: flex;
+		}
+		.banner-col-1 {
+			width: 49%;
+			height: 600px;
+			display: flex;
+		}
+
+		.banner-col-1 img {
+			width: 100%;
+			height: 100%;
+
+		}
+		.banner-content {
+			display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		}
+		
+		.label-4{
+			font-size: 1.25rem;
+		    line-height: 2;
+		    background-image: none;
+		    text-transform: uppercase;
+		    letter-spacing: 5px;
+		    font-weight: 700;
+		    font-family: "Open Sans", sans-serif;
+		    background-color: #3e588b;
+		    padding: 10px;
+		    color: white;
+		    margin-bottom: 13px;
+		    text-align: center;
+		    width: 60%;
+		}
+
+		.heading-1{
+			font-size: 3.25rem;
+		    text-transform: uppercase;
+		    letter-spacing: normal;
+		    font-weight: 700;
+		    font-family: "Roboto Condensed", sans-serif;
+		    margin: 20px 0 0;
+		    color: #3e588b;
+		}
+
+		.btn {
+			width: 60%;
+			padding: 10px;
+			font-size: 1rem;
+		    border-style: solid;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    letter-spacing: 3px;
+		    border-color: #3e588b;
+		    margin-top: 10px;
+		}
+		.btn:hover{
+			background-color: #3e588b;
+			color: white;
+		}
+
+		#section-one{
+			width: 100%;
+			height: 550px;
+			background-color: #3e588b;
+		}
+		.sec-one-row {
+			display: flex;
+			width: 100%;
+			padding-top: 4%;
+		}
+		.sec-one-col{
+			width: 23%;
+			margin: 0px 1%;
+		}
+
+		.sec-span {
+			background-color: white;
+			    border-radius: 50%;
+			    height: 78px;
+			    width: 78px;
+			    display: flex;
+			    margin: 30px auto 0 0;
+			    justify-content: center;
+			    align-items: center;
+		}
+		.sec-span img{
+			height: 50%
+		}
+
+		.sec-one-label-4 {
+			font-family: 'Open Sans',sans-serif;
+			font-size: 1.375rem;
+			line-height: 1.2;
+			color: white;
+			text-transform: uppercase;
+		    font-weight: 700;
+		    margin: 30px auto 0 0;
+		    letter-spacing: 2px;
+		}
+
+		.sec-one-p{
+			font-weight: 500;
+		    margin: 20px 0 0;
+		    color: #ffffff;
+		    line-height: 1.2;
+		    font-size: 20px;
+		}
+		.lower{
+			margin-top: 10%;
+		}
+
+		.sec-two{
+			width: 100%;
+			height: 600px;
+			background-color: #dadbda;
+		}
+		.sec-two-container{
+			
+		}
+		.sec-two-row-2 {
+    	display: flex;
+		}
+		.sec-two-col {
+    	padding: 25px
+		}
+		.sec-two-label-4 {
+			font-family: 'Open Sans',sans-serif;
+			font-size: 1.375rem;
+			line-height: 1.2;
+			color: #3e588b;
+			text-transform: uppercase;
+		    font-weight: 700;
+		    margin: 30px auto 0 0;
+		    letter-spacing: 2px;
+		}
+		.sec-two-p{
+			font-weight: 500;
+		    margin: 20px 0 0;
+		    line-height: 1.2;
+		    font-size: 20px;
+		    font-style: italic;
+		}
+		.sec-two-hr {
+			width: 40%;
+			line-height: 2;
+			height: 5px;
+			border: none;
+    		background-color: #3e588b;
+		}
+		.sec-two-row-1 {
+		    padding: 50px 0px;
+		}
+		.sec-two-row-content {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
+		.sec-two-h2{
+			font-size: 3.75rem;
+    		line-height: 1.1;
+    		font-weight: bolder;
+    		font-family: 'Roboto Condensed',sans-serif;
+    		color: #3e588b;
+		}
+		.sec-two-row-p {
+			
+		    font-weight: 500;
+		    margin: 20px 0 0;
+		    line-height: 1.2;
+		    font-size: 20px;
+		    font-style: italic;
+		}
+		#section-three{
+			width: 100%;
+			height: 600px;
+			background-color: #3e588b;
+		}
+
+		.section-three-first{
+			width: 50%;
+			height: 600px;
+			background-color: #b4b5b4;
+		}
+
+		.section-three-content{
+			width: 1000px;
+		    height: 500px;
+		    position: absolute;
+		    padding: 0px 130px;
+		    margin-top: 50px;
+		}
+
+		.section-three-content img{
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div class="page-root">
+	<section id="main-banner">
+		<div class="container">
+			<div class="container-content">
+				<div class="banner-col-1">
+						<div class="banner-content">
+								<h4 class="label-4">MODERN & FUN</h4> 
+								<h1 class="heading-1">ONLINE MUSIC <br> EDUCATION</h1>
+								<button class="btn">Read More</button>
+						</div>	
+				</div>
+				<div class="banner-col-1">
+					<img src="assets/image-1.png">
+				</div>
+				
+			</div>
+
+			
+		</div>
+		
+	</section>
+
+	<section id="section-one">
+		<div class="container">
+			<div class="sec-one-row">
+				<div class="sec-one-col">
+					<span class="sec-span"> <img src="assets/icon1.png">  </span>
+					<h4 class="sec-one-label-4">MUSIC THERAPY</h4>
+					<p class="sec-one-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+				</div>
+				<div class="sec-one-col lower">
+					<span class="sec-span"> <img src="assets/icon1.png">  </span>
+						<h4 class="sec-one-label-4">OUR MISSION</h4>
+						<p class="sec-one-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+				</div>
+				<div class="sec-one-col">
+					<span class="sec-span"> <img src="assets/icon1.png">  </span>
+						<h4 class="sec-one-label-4">MUSIC CAMPS</h4>
+						<p class="sec-one-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+				</div>
+				<div class="sec-one-col lower">
+					<span class="sec-span"> <img src="assets/icon1.png">  </span>
+						<h4 class="sec-one-label-4">LIBRARY</h4>
+						<p class="sec-one-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+				</div>
+			</div> 
+		</div>
+		
+	</section>
+
+	<section class="sec-two">
+		<div class="container sec-two-container">
+			<div class="sec-two-row-1">
+				<div class="sec-two-row-content">
+					<h2 class="sec-two-h2">Music Education</h2>
+					<p class="sec-two-row-p">The beauty of running is that it can be done in a variety of places, by people of all abilities, at distances both short and long.</p>
+				</div>
+			</div>
+			<div class="sec-two-row-2">
+				<div class="sec-two-col">
+					<div class="sec-two-col-content">
+						<hr  class="sec-two-hr">
+						<h4 class="sec-two-label-4">STUDENTS</h4>
+						<p class="sec-two-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+					</div>
+				</div>
+				<div class="sec-two-col">
+					<div class="sec-two-col-content">
+						<hr  class="sec-two-hr">
+						<h4 class="sec-two-label-4">PROGRAMS</h4>
+						<p class="sec-two-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+					</div>
+				</div>
+				<div class="sec-two-col">
+					<div class="sec-two-col-content">
+						<hr  class="sec-two-hr">
+						<h4 class="sec-two-label-4"> MUSIC</h4>
+						<p class="sec-two-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+					</div>
+				</div>
+				<div class="sec-two-col">
+					<div class="sec-two-col-content">
+						<hr class="sec-two-hr">
+						<h4 class="sec-two-label-4"> PSYCHOLOGY</h4>
+						<p class="sec-two-p">Justo nec ultrices dui sapien eget mi. Velit egestas dui id ornare arcu odio ut sem nulla. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<section id="section-three">
+		<div class="section-three-first">
+				<div class="section-three-content">
+					<img src="assets/image-2.jpg">
+				</div>
+		</div>
+	</section>
+	
+
+
+
+</div>
+
+</body>
+</html>
